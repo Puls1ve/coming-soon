@@ -15,62 +15,132 @@ header {
 }
 
     .img {
-        margin-top:150px;
+        margin-top:195px;
     }
     .text1 {
-        margin-top:50px;
-        font-size: 35px;
+        margin-top:30px;
+        font-size: 30px;
         font: weight 700;   
+        padding: 10px;
+        letter-spacing: -3px;
 
     }
     .paragprah {
+        font-size: 30px;
+        color: #BAC9D0;
+        
 
+    }
+    .timeclock {
+        color: white;
+        margin-top: 50px;
+        width: 50%;
+        margin-left: 25%;
+        
     }
     .time {
+        display: inline-block;
+        width: 25%;
+        float: left;
+    }
+
+    .time-in-minutes{
+        font-size: 60px;
+        font-weight: bold;
+    }
+    .time-in-days {
 
     }
-    .form1 {
+  
 
+
+
+    .headerform {
+        display: inline-block;
+        text-align: left;
+        margin-top: 50px;
+       
+       
+    }
+
+    form > .row1 > label {
+        display: block;
+        color:white;
+
+    }
+    form > .row1 > input {
+        display: block;
+        box-sizing: border-box;
+        border: none;
+        border-bottom: 3px solid white;
+        background:transparent;
+        width: 750px;
+    
+        
     }
     button {
-
+        color: white;
+        background-color: #EA1E63;
+        border:none;
+        padding: 15px 80px;
+        display: block;
+        margin: auto;
+        margin-top: 40px;
     }
 
 section {
-        display: inline-block;
-        height: 300px;
+        display: inline-block;  
+        height: 500px;
+        
     }
 
 
         .container {
             display: inline-block;
-            width: 50%;
-            float: left;
+            width: 40%;
+            float:left;
+            margin-top: 80px;
+            margin-left: 50px;
         
-                    }
+            
+        }
         .h1 {
+            display: inline-block;
+            
 
 
         }
-        .paragprah {
-
+        .paragprah2 {
+            margin-top: 50px;
+            width: 620px;
         }
         .progressbar {
-
+            
+        }
+        .bar {
+           display: block;
+           height: 40px;
+           width: 200px;
+        }
+        .text1 {
+        
         }
     
 
     .container2 {
         display: inline-block;
-        width: 50%;
-        float: left;
+        width: 40%;
+        float: right;
+        margin-top: 80px;
+        
     }
 
         .h2 {
 
         }
 
-        .paragprah3 {
+        .paragraph3 {
+            margin-top: 50px;
 
         }
 
@@ -82,6 +152,7 @@ section {
 
 footer {
     background-color: #03A9F5;
+    height: 250px;
     width: 100%;
     text-align: center;
 }

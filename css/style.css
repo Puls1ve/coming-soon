@@ -73,7 +73,7 @@ header {
         display: block;
         box-sizing: border-box;
         border: none;
-        border-bottom: 3px solid white;
+        border-bottom: 2px solid rgba(255,255,255 ,0.7);
         background:transparent;
         width: 750px;
         outline: none;
@@ -93,8 +93,8 @@ header {
 section {
         display: inline-block; 
         height: 600px;
-        width: 80%;
-        margin-left: 10%;
+        width: 50%;
+        margin-left: 25%;
         
     }
 
@@ -111,6 +111,7 @@ section {
         .h1 {
             display: inline-block;
             margin-bottom: 50px;
+            width: 100%;
             
 
 
@@ -123,6 +124,10 @@ section {
             width: 100%;
             font-size:17px;
             color: #C0C8D5;
+        }
+        .paragprah2 > p > a {
+            color: #EA1E63;
+            text-decoration: none;
         }
   
         .progress-bar {
@@ -173,14 +178,12 @@ section {
                 margin-bottom: 80px;
                 font-size: 17px;
                 color: #C0C8D5;
-
+        }
+        .paragraph3 > p > a {
+        color: #EA1E63;
+        text-decoration: none;
         }
 
-         /* .container2 > form >.form-row{
-            display: inline-block;
-            width: 100%;
-            
-        } */
 
         form >.form-row> input {
             display: inline-block;
@@ -210,7 +213,56 @@ section {
 
 footer {
     background-color: #03A9F5;
-    height: 250px;
+    height: 300px;
     width: 100%;
     text-align: center;
 }
+    .icons {
+            display: inline-block;
+            color: white;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            border-bottom: 0.5px solid rgba(255,255,255 ,0.7);
+            width: 70%;
+            /* margin-left: 15%; */
+    }
+  
+
+    .icons > i {
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-bottom: 20px;
+    
+    }
+    .imgfooterlogo {
+            display:inline-block;
+            width: 100%;
+            margin-bottom: 20px;
+    }
+    .footerlinks {
+            display: inline-block;
+            width: 100%;
+    }
+    .link {
+        display: inline-block;
+        width: 30%;
+    }
+    .link p {
+            display: inline-block;
+            padding: 5px;
+            color: #43CAFA;
+    }
+    .link > p > a {
+        color: white;
+        text-decoration: none;
+    }
+    .footerparagraph > p > a {
+        color: white;
+        text-decoration: none;
+    }
+    .footerparagraph p {
+            color: #43CAFA;
+            width: 80%;
+            margin-left: 10%;
+    }
+ 

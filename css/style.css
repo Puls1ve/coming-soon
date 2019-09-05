@@ -6,7 +6,7 @@ body * {
     box-sizing: border-box;
 }
 
-header {
+main {
     background: url(../img/bg.jpg);
     width: 100%;
     height: 100vh;
@@ -21,12 +21,10 @@ header {
         margin-top:30px;
         font-size: 30px;
         font: weight 700;   
-        padding: 10px;
-        letter-spacing: -3px;
 
     }
     .paragprah p {
-        font-size: 30px;
+        font-size: 20px;
         color: #BAC9D0;
         
 
@@ -34,8 +32,7 @@ header {
     .timeclock {
         color: white;
         margin-top: 50px;
-        width: 50%;
-        margin-left: 25%;
+        width: 100%;
         
     }
     .time {
@@ -57,26 +54,29 @@ header {
 
     .headerform {
         display: inline-block;
-        text-align: left;
+        width: 80%;
         margin-top: 50px;
+        
+        
        
        
     }
-
-    form > .row1 > label {
-        display: block;
-        color:white;
-        margin-bottom: 20px;
-
+    .headerform > .row1 {
+        display: inline-block;
+        float: left;
+        width: 100%;
     }
+    
     form > .row1 > input {
-        display: block;
+        display: inline-block;
         box-sizing: border-box;
+        color: white;
         border: none;
         border-bottom: 2px solid rgba(255,255,255 ,0.7);
         background:transparent;
-        width: 750px;
+        width: 100%;
         outline: none;
+        padding-bottom: 5px;
     
         
     }
@@ -91,19 +91,19 @@ header {
     }
 
 section {
-        display: inline-block; 
-        height: 600px;
-        width: 50%;
-        margin-left: 25%;
+        display: inline-block;
+        /* height: 600px; */
+        width: 100%;
         
     }
+   
 
 
-        .container {
+        .left {
             display: inline-block;
             width: 40%;
             float:left;
-            /* margin-left: 50px; */
+            /* margin-left: 50px; */    
             margin-top: 80px;
         
             
@@ -136,6 +136,8 @@ section {
         }
 
         .texts {
+            display: inline-block;
+            width: 100%;
         
         }
         .texts > .title {
@@ -160,7 +162,7 @@ section {
         
     }
 
-    .container2 {
+    .right {
         display: inline-block;
         width: 49%;
         float: right;
@@ -212,26 +214,32 @@ section {
         }
 
 footer {
+    display: inline-block;
+    float:left;
     background-color: #03A9F5;
-    height: 300px;
+    /* height: 300px; */
     width: 100%;
     text-align: center;
 }
+
     .icons {
             display: inline-block;
             color: white;
             margin-top: 40px;
             margin-bottom: 40px;
             border-bottom: 0.5px solid rgba(255,255,255 ,0.7);
-            width: 70%;
+            width: 100%;
+            float:left;
             /* margin-left: 15%; */
     }
   
 
     .icons > i {
+        display: inline-block;
         margin-left: 40px;
         margin-right: 40px;
         margin-bottom: 20px;
+        
     
     }
     .imgfooterlogo {
@@ -245,7 +253,7 @@ footer {
     }
     .link {
         display: inline-block;
-        width: 30%;
+        width: 100%;
     }
     .link p {
             display: inline-block;
@@ -266,3 +274,80 @@ footer {
             margin-left: 10%;
     }
  
+    .responsive-design-main {
+        width: 700px;
+        margin-left: calc( (100% - 700px) / 2 );
+        background-color: yellow;
+    }
+
+    .responsive-design-sections {
+        display: inline-block;
+        /* height: 100%; */
+        float: left;
+        width: 1200px;
+        margin-left: calc( (100% - 1200px) / 2 ); 
+        /* background-color: red;        */
+        }
+
+    responsive-design-sections {
+        display: inline-block;
+        /* height: 100%; */
+        float: left;
+        width: 1200px;
+        margin-left: calc( (100% - 1200px) / 2 ); 
+        /* background-color: red;        */
+        }
+
+
+    @media (max-width: 1300px) {
+        .responsive-design-sections {
+            width: 900px;
+            margin-left: calc( (100% - 900px) / 2 );
+        }
+    }
+
+    @media (max-width: 1000px) {
+        .responsive-design-sections {
+            width: 700px;
+            margin-left: calc( (100% - 700px) / 2 );
+            
+        }
+
+        .responsive-design-sections > .left {
+            display: block;
+            width: 100%;
+        }
+        .responsive-design-sections > .right {
+            display: block;
+            width: 100%;
+        }
+        footer {
+                display: block;
+        }
+
+    }
+    @media (max-width: 800px) {
+        .responsive-design-sections {
+            width: 600px;
+            margin-left: calc( (100% - 700px) / 2 );
+           
+            
+        }
+        
+    }
+    
+
+
+    @media (max-width: 900px) {
+        .responsive-design-main {
+        width: 700px;
+        margin-left: calc( (100% - 700px ) /2 );
+        }
+    }
+
+    @media (max-width: 800px) {
+        .responsive-design-main {
+        width: 600px;
+        margin-left: calc( (100% - 600px ) /2 );
+        }
+    }

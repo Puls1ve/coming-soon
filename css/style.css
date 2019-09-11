@@ -5,13 +5,18 @@ body * {
     vertical-align: top;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 main {
     background: url(../img/bg.jpg);
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     float: left;
     text-align: center;
+    /* background-repeat: no-repeat; */
+    background-size: cover;
 }
 
     .img {
@@ -87,6 +92,13 @@ main {
         margin: auto;
         margin-top: 40px;
         margin-bottom: 40px;
+        border-radius: 2px;
+        box-shadow:  0px 1px 2px #0005;
+        cursor: pointer;
+    }
+
+    button:hover {
+        box-shadow: 0px 2px 4px #0009
     }
 
     .mouse {
@@ -181,15 +193,42 @@ section {
             margin-bottom: 40px;    
             width: 100%;
             background-color: gray;
-            height: 10px;
+            height: 7px;
 
         }
 
          .bar > .value {
         display: inline-block;
-        background-color: #03A9F5;
+        width: 90%;
+        /* background-color: #03A9F5;
+        animation-name: loading;
+        animation-iteration-count: 1;
+        animation-duration: 2s; */
         
     }
+
+
+    .bar > .value > .loading {
+        display: inline-block;
+        width: 90%;
+        height: 100%;
+        background-color: #03A9F5;
+        animation-name: loading;
+        animation-iteration-count: 1;
+        animation-duration: 2s;
+    }
+
+    @keyframes loading {
+        0% {
+            width: 0;
+        }
+
+        100% {
+            width: 90%;
+        }
+    }
+
+
 
     .right {
         display: inline-block;
@@ -217,26 +256,34 @@ section {
         }
 
 
-        form >.form-row> input {
+        form >.form-row > input {
             display: inline-block;
             width: 49%;
             border:none;
             border-bottom: 1px solid #BAC9D0;
-            margin-bottom: 80px;
+            /* margin-bottom: px; */
             padding-bottom: 20px; 
+            outline: none;
         }
+        /* input:focus {
+            outline: none;
+        } */
 
         form > .form-row> textarea {
                 display: inline-block;
                 width: 100%;
                 border:none;
                 border-bottom: 1px solid #BAC9D0;
-                padding-bottom: 20px;  
+                padding-bottom: 10px;
+                resize: vertical;
+                min-height: 100px;
+                max-height: 300px;
         }
 
         .btn > button {
             float: right;
             display: inline-block;
+            padding: 15px 40px;
         }
 
 footer {
@@ -246,6 +293,15 @@ footer {
     width: 100%;
     text-align: center;
     /* padding-top: 80px; */
+}
+
+footer .fab:hover {
+        background-color: #EA1E63;
+        color: #fff;
+        border-radius: 50%;
+        /* text-decoration: none; */
+        border: none;
+        
 }
 
     .icons {
@@ -266,9 +322,11 @@ footer {
 
     .icons > a > i {
         display: inline-block;
-        margin-left: 40px;
-        margin-right: 40px;
+        /* margin-left: 40px;
+        margin-right: 40px; */
         margin-bottom: 20px;
+        margin: 40px;
+        padding: 10px;
     }
 
     .imgfooterlogo {
@@ -310,8 +368,9 @@ footer {
             width: 60px;
             height: 60px;
             border-radius: 90px;
-            left:81%;
+            left:96%;
             top:-30px;
+            box-shadow: 0 2px 4px #0008;
     }
 
     .up-button > .arrow > a {
@@ -331,19 +390,19 @@ footer {
 
     .responsive-design-sections {
         display: inline-block;
-        float: left;
+        float: left;    
         width: 1200px;
-        margin-left: calc( (100% - 1200px) / 2 ); 
-        margin-bottom: 120px;
+        margin-left:  calc( (100% - 1200px) / 2 ); 
+        margin-bottom: 20px;
         }   
 
-    responsive-design-sections {
+    /* responsive-design-sections {
         display: inline-block;
         float: left;
         width: 1200px;
-        margin-left: calc( (100% - 1200px) / 2 ); 
-        /* background-color: red;        */
-        }
+        margin-left: 0 calc( (100% - 1200px) / 2 ); 
+        background-color: red;       
+        } */
 
 
     @media (max-width: 1300px) {
